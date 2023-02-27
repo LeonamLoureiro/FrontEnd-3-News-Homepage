@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Regular";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "ExtraBold";
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+  
+h1 {
+    font-family: "ExtraBold";    
+}
+
+p {
+    font-family: "Regular";
+    font-size: 14px;    
+}
+
+.second-block {
+    background-color: #222;
+    padding: 10px;
+}
+
+.second-block h2 {
+    color: yellow;
+    margin: 15px 10px;
+    font-family: "ExtraBold";
+}
+
+.second-block h3 {
+    color: white;
+    margin: 15px 10px;
+    font-family: "Bold";
+}
+
+.second-block p {
+    color: #eee;
+    margin: 15px 10px;
+    font-family: "Regular";
+}
+
+.top-articles-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+.button {
+    display: flex;
+    background: #f7606d;
+	color: white;	
+	font-size: 16px;
+	height: 40px;
+	width: 180px;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;    	
+}
+
+@media only screen and (min-width: 769px) {
+    .mobile {
+        display: none;        
+    }
+
+    .desktop {
+        display: block;
+    }
+}
