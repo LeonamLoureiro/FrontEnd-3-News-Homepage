@@ -22,6 +22,16 @@ p {
     font-size: 14px;    
 }
 
+.first-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;    
+}
+
+.first-block img {
+    max-width: 100%;
+}
+
 .second-block {
     background-color: #222;
     padding: 10px;
@@ -45,9 +55,25 @@ p {
     font-family: "Regular";
 }
 
-.top-articles-content {
+.third-block {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;    
+}
+
+.third-block img {
+    max-width: 125px;
+}
+
+.top-articles-box {
+    display: flex;
+    align-items: center;    
+    margin: 20px 1px;    
+}
+
+.top-articles-text {
+    margin-left: 10px;
+    
 }
 
 .mobile {
@@ -80,4 +106,37 @@ p {
     .desktop {
         display: block;
     }
+
+    .top-articles-box {
+        max-width: 30vw;
+    }
+
+    .home-wrapper {
+        display: flex;
+    }
+  
+    .main-news {
+        display: flex;    
+    }
+
+    .main-news-lead {
+        margin: 1rem 2rem;
+    }
+
+    .container {
+        margin: 50px;
+    }
+
+    .first-block {
+        max-width: 67.5%;
+    }
+
+    .second-block {
+        min-width: 25%;
+    }
+
+    .third-block {
+        min-width: max-content;
+    }
+
 }
