@@ -19,7 +19,13 @@ h1 {
 
 p {
     font-family: "Regular";
-    font-size: 14px;    
+    font-size: 14px;
+    line-height: 1.5rem;    
+}
+
+hr {
+    opacity: 50%;
+    margin: 20px 5px;
 }
 
 .first-block {
@@ -35,18 +41,27 @@ p {
 .second-block {
     background-color: #222;
     padding: 10px;
+    margin-bottom: 4rem;
 }
 
 .second-block h2 {
-    color: yellow;
-    margin: 15px 10px;
+    color: #cab304;
+    margin: 10px 10px 30px;
     font-family: "ExtraBold";
 }
 
 .second-block h3 {
-    color: white;
     margin: 15px 10px;
     font-family: "Bold";
+}
+
+.second-block a {
+    color: white;
+    text-decoration: none;
+}
+
+.second-block a:hover {
+    color: #cab304;
 }
 
 .second-block p {
@@ -65,6 +80,24 @@ p {
     max-width: 125px;
 }
 
+.third-block h3 {
+    font-family: "Bold";
+}
+
+.third-block p {
+    font-family: "Regular";
+    line-height: 1.2rem;
+}
+
+.third-block a {
+    color: black;
+    text-decoration: none;
+}
+
+.third-block a:hover {
+    color: #f7606d;
+}
+
 .top-articles-box {
     display: flex;
     align-items: center;    
@@ -72,8 +105,16 @@ p {
 }
 
 .top-articles-text {
-    margin-left: 10px;
-    
+    margin-left: 10px;    
+}
+
+.main-news-lead {
+    margin-bottom: 4rem;
+}
+
+.main-news-lead a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .mobile {
@@ -88,7 +129,7 @@ p {
     display: flex;
     background: #f7606d;
 	color: white;	
-	font-size: 16px;
+	font-size: 14px;
 	height: 40px;
 	width: 180px;
     letter-spacing: 5px;
@@ -96,6 +137,43 @@ p {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;    	
+}
+
+.button:hover {
+    background: #000;
+}
+
+.number-style {
+    color: #aaa;
+    font-size: 32px;
+    font-family: "ExtraBold";
+}
+
+.nav-item {
+    padding: 0px 10px;    
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #777;
+}
+
+.nav-item a:hover {
+    color: #f7606d
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.navbar {
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 769px) {

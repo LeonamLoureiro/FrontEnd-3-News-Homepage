@@ -17,13 +17,33 @@
 </head>
 <body>
   <div class="container">
-    <div>
-    Home
-    New
-    Popular
-    Trending
-    Categories
-    </div>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-logo" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+        <button class="navbar-switch" type="button">
+          <span class="navbar-switch-icon"></span>
+        </button>
+        <div class="navbar-collapse">
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>     
     <div class="home-wrapper">
       <div class="first-block">
         <img src="assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile" class="mobile" />
@@ -33,7 +53,7 @@
           <div class="main-news-lead">
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?</p>
-            <div class="button">Read more</div>
+            <div class="button"><a href="#">Read more</a></div>
           </div>        
         </div>
       </div>
@@ -41,13 +61,13 @@
       <div class="second-block">
         <h2>New</h2> 
 
-        <h3>Hydrogen VS Electric Cars</h3>
+        <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-
-        <h3>The Downsides of AI Artistry</h3>
+        <hr>
+        <h3><a href="#">The Downsides of AI Artistry</a></h3>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
-
-        <h3>Is VC Funding Drying Up?</h3>
+        <hr>
+        <h3><a href="#">Is VC Funding Drying Up?</a></h3>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </div>
     </div>
@@ -56,8 +76,8 @@
       <div class="top-articles-box">
         <img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" />
         <div class="top-articles-text">
-          <span>01</span>
-          <h3>Reviving Retro PCs</h3>
+          <span class="number-style">01</span>
+          <h3><a href="#">Reviving Retro PCs</a></h3>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
@@ -65,8 +85,8 @@
       <div class="top-articles-box">
         <img src="assets/images/image-top-laptops.jpg" alt="image-top-laptops" />
         <div class="top-articles-text">
-          <span>02</span>
-          <h3>Top 10 Laptops of 2022</h3>
+          <span class="number-style">02</span>
+          <h3><a href="#">Top 10 Laptops of 2022</a></h3>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
@@ -74,8 +94,8 @@
       <div class="top-articles-box">
         <img src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth" />
         <div class="top-articles-text">  
-          <span>03</span>
-          <h3>The Growth of Gaming</h3>
+          <span class="number-style">03</span>
+          <h3><a href="#">The Growth of Gaming</a></h3>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
