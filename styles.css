@@ -14,18 +14,19 @@
 }
   
 h1 {
-    font-family: "ExtraBold";    
+    font-family: "ExtraBold";
+    font-size: 40px;    
 }
 
 p {
     font-family: "Regular";
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5rem;    
 }
 
 hr {
     opacity: 50%;
-    margin: 20px 5px;
+    margin: 2px 5px;
 }
 
 .first-block {
@@ -35,19 +36,24 @@ hr {
 }
 
 .first-block img {
-    max-width: 100%;
+    max-width: calc(100% + 20px);
 }
 
 .second-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #222;
-    padding: 10px;
-    margin-bottom: 4rem;
+    padding: 5px;
+    gap: 1px;    
+    margin-bottom: 3rem;
 }
 
 .second-block h2 {
     color: #cab304;
-    margin: 10px 10px 30px;
+    margin: 10px 10px 20px;
     font-family: "ExtraBold";
+    font-size: 2rem;
 }
 
 .second-block h3 {
@@ -156,6 +162,8 @@ hr {
 .nav-item a {
     text-decoration: none;
     color: #777;
+    font-size: 16px;
+    font-family: "Regular";
 }
 
 .nav-item a:hover {
@@ -169,7 +177,8 @@ hr {
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    align-items: center;    
 }
 
 .navbar {
@@ -205,16 +214,25 @@ hr {
         margin: 50px;
     }
 
+    .first-block img {
+        max-width: 100%;
+    }
+
     .first-block {
         max-width: 67.5%;
     }
 
     .second-block {
         min-width: 25%;
+        padding: 30px 10px 0px 10px;
     }
 
     .third-block {
         min-width: max-content;
+    }
+
+    .icon-menu {
+        display: none;
     }
 
 }
