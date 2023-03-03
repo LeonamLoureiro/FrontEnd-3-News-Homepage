@@ -185,6 +185,11 @@ hr {
     margin-bottom: 20px;
 }
 
+#menu-button, #menu-close {
+    background-color: #fff;
+    border: none;
+}
+
 @media only screen and (min-width: 769px) {
     .mobile {
         display: none;        
@@ -232,6 +237,10 @@ hr {
     }
 
     .icon-menu {
+        display: none;
+    }
+
+    #menu-button, #menu-close {
         display: none;
     }
 
