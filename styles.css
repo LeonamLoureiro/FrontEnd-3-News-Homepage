@@ -170,11 +170,6 @@ hr {
     color: #f7606d
 }
 
-.navbar-list {
-    display: flex;
-    list-style: none;
-}
-
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -186,7 +181,21 @@ hr {
 }
 
 .navbar-collapse {
-    display: none;
+    display: none;    
+}
+
+.navbar-collapse-fixed {
+    position: fixed;
+    height: 100vh;
+    background-color: #fff;
+    top: 60px;   
+    width: 70%;
+    margin-left: 30%;    
+}
+
+.navbar-collapse-fixed ul li {
+    display: block;
+    margin-top: 40px;    
 }
 
 #menu-open, #menu-close {
@@ -254,6 +263,11 @@ hr {
 
     .navbar-collapse {
         display: block;
+    }
+
+    .navbar-list {
+        display: flex;
+        list-style: none;
     }
 
 }
