@@ -185,9 +185,17 @@ hr {
     margin-bottom: 20px;
 }
 
-#menu-button, #menu-close {
+.navbar-collapse {
+    display: none;
+}
+
+#menu-open, #menu-close {
     background-color: #fff;
     border: none;
+}
+
+#menu-close {
+    display: none;
 }
 
 @media only screen and (min-width: 769px) {
@@ -240,8 +248,12 @@ hr {
         display: none;
     }
 
-    #menu-button, #menu-close {
+    #menu-open, #menu-close {
         display: none;
+    }
+
+    .navbar-collapse {
+        display: block;
     }
 
 }
